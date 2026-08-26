@@ -1,4 +1,16 @@
-# CEO Executive Dashboard — Iconic Founders
+# CEO Executive Dashboard (in production)
+
+A personal executive command center built for the CEO of Iconic Founders Group: day-at-a-glance calendar, AI-triaged inbox, task tracking, meeting prep, and an AI-generated **morning briefing email** — all powered by a **strictly read-only** integration layer.
+
+- **Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Claude API (Anthropic)
+- **Data sources:** Outlook (mail + calendar), Asana, LinkedIn — via Composio
+- **Read-only by design:** a write-action allowlist test (`npm run test:no-write-slugs`) guarantees this surface can never mutate the CEO's real accounts
+- **Companion product** to [ai-scheduling-agent](https://github.com/anjanakummetha/ai-scheduling-agent) — the write-capable AI agent lives there; this dashboard only reads
+
+*Built solo during an AI Agent Engineering internship, May–Aug 2026. Original feature docs below.*
+
+---
+
 
 A full-featured executive command center built for Kory to manage daily activities, priorities, and team coordination at a glance.
 
